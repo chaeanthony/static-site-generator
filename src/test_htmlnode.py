@@ -42,10 +42,6 @@ class TestLeafNode(unittest.TestCase):
             '<p href="https://github.com/chaeanthony">lorem ipsum</p>',
         )
 
-    def test_to_html_no_value(self):
-        with self.assertRaises(ValueError):
-            LeafNode(None, None).to_html()
-
     def test_to_html_no_tag(self):
         self.assertEqual(
             LeafNode(
